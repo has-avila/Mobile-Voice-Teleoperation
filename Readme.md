@@ -2,9 +2,10 @@ O Mobile Voice Teleoperation (MVT) é um projeto inicial para executar a teleope
 
 Embora seja um projeto em fase embrionária, o sistema de controle da teleoperação foi testada tanto em software quanto em campo.
 
-Ainda é necessário a criação de um aplicativo Mobile eficaz, utilizar técnicas de reconhecimento de voz e que seja capaz de enviar para o tópico de controle as palavras-chave: frente, tras, esquerda, direita e para.  
+Ainda é necessário a criação de um aplicativo Mobile eficaz, utilizar técnicas de reconhecimento de voz e que seja capaz de enviar para o tópico de controle as palavras-chave: frente, tras, esquerda, direita e para.
 
 Requisitos Necessários:
+
 Ubuntu 16.04
 ROS Kinect Kame
 Gazebo com Turtlebot ou Robô físico
@@ -84,3 +85,8 @@ tras direita + direita = direita
 tras direita + para = para
 
 Toda vez que o ultimo comando é “para”, o robo deve parar o movimento.
+
+Para aumentar e reduzir a velocidade do robô utiliza-se os seguintes comandos:
+
+rapido
+devagar
