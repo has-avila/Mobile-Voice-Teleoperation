@@ -1,0 +1,55 @@
+Abra package.xml e verifique se as duas linhas abaixo estão no arquivo e estão uncommented:
+
+  <build_depend>message_generation</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+
+Abra CMakeLists.txt em algum editor de texto.
+
+Adicione a dependência message_generation na lista de componentes de find_package:
+
+find_package(catkin REQUIRED COMPONENTS
+   roscpp
+   rospy
+   std_msgs
+   message_generation
+)
+
+Verifique também se você exportou a dependência message runtime:
+
+catkin_package(
+  ...
+  CATKIN_DEPENDS message_runtime ...
+  ...)
+
+Encontre o seguinte bloco no seu código (CMakeLists.txt):
+
+# add_message_files(
+#   FILES
+#   Message1.msg
+#   Message2.msg
+# )
+
+Remova os símbolos # e mensagens padronizadas (Message1.msg, Message2.msg), e coloque o nome do arquivo de mensagem customizado, como mostrado abaixo:
+
+add_message_files(
+  FILES
+  custom.msg
+)
+
+Encontre o seguinte bloco no seu código (CMakeLists.txt):
+
+# generate_messages(
+#   DEPENDENCIES
+#   std_msgs
+# )
+
+Remova as #:
+
+generate_messages(
+  DEPENDENCIES
+  std_msgs
+)
+
+Essas informações podem ser acessadas no seguinte tutorial:
+
+http://wiki.ros.org/ROS/Tutorials/CreatingMsgAndSrv#Using_rosmsg

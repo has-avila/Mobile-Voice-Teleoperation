@@ -9,6 +9,7 @@ Requisitos Necessários:
 Ubuntu 16.04
 ROS Kinect Kame
 Gazebo com robô virtual ou Robô físico
+Habilite mensagens customizadas (Tutorial custom_msg.txt)
 
 Regras de movimento do robô:
 
