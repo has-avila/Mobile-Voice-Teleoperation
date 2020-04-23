@@ -1,0 +1,5 @@
+<launch>
+  <node name="talker" pkg="voice_mv" type="command.py"/>
+  <node name="talklisten" pkg="voice_mv" type="control.py"/>
+  <node name="listener" pkg="voice_mv" type="move.py"/>
+</launch>
