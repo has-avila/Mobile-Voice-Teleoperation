@@ -1,14 +1,14 @@
-O Mobile Voice Teleoperation (MVT) é um projeto inicial para executar a teleoperação por voz de uma plataforma robótica móvel utilizando o ROS.
+O Mobile Voice Teleoperation (MVT) é um projeto open-source com o intuito de executar a teleoperação por voz de uma plataforma robótica móvel utilizando o ROS.
 
 Embora seja um projeto em fase embrionária, o sistema de controle da teleoperação foi testada tanto em software quanto em campo.
 
-Ainda é necessário a criação de um aplicativo Mobile eficaz, utilizar técnicas de reconhecimento de voz e que seja capaz de enviar para o tópico de controle as palavras-chave: frente, tras, esquerda, direita e para.
+Ainda é necessário a criação de um aplicativo mobile utilizando técnicas de reconhecimento de voz que seja capaz, de enviar para o tópico de controle (control.py), as palavras-chave: frente, tras, esquerda, direita e para.
 
 Requisitos Necessários:
 
 Ubuntu 16.04
 ROS Kinect Kame
-Gazebo com Turtlebot ou Robô físico
+Gazebo com robô virtual ou Robô físico
 
 Regras de movimento do robô:
 
